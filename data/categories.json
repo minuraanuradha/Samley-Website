@@ -1,0 +1,77 @@
+[
+  {
+    "id": "teas",
+    "slug": "teas",
+    "title": "Teas",
+    "subCategories": [
+      { "id": "green-tea", "slug": "green-tea", "title": "Green Tea" },
+      { "id": "black-tea", "slug": "black-tea", "title": "Black Tea" },
+      { "id": "regional-tea", "slug": "regional-tea", "title": "Regional Tea" },
+      { "id": "elegance-tea", "slug": "elegance-tea", "title": "Elegance Tea" },
+      { "id": "luxury-tea", "slug": "luxury-tea", "title": "Luxury Tea" },
+      { "id": "designer-tea", "slug": "designer-tea", "title": "Designer Tea" },
+      { "id": "wellness-tea", "slug": "wellness-tea", "title": "Wellness Tea" },
+      { "id": "speciality-tea", "slug": "speciality-tea", "title": "Speciality Tea" },
+      { "id": "gourmet-tea", "slug": "gourmet-tea", "title": "Gourmet Tea" },
+      { "id": "signature-tea", "slug": "signature-tea", "title": "Signature Tea" },
+      { "id": "heritage-tea", "slug": "heritage-tea", "title": "Heritage Tea" },
+      { "id": "gift-tea", "slug": "gift-tea", "title": "Gift Tea" },
+      { "id": "tea-capsules", "slug": "tea-capsules", "title": "Tea Capsules" },
+      { "id": "herbal-infusion", "slug": "herbal-infusion", "title": "Herbal Infusion" },
+      { "id": "organic-herbal", "slug": "organic-herbal", "title": "Organic Herbal" }
+    ]
+  },
+  {
+    "id": "beverages",
+    "slug": "beverages",
+    "title": "Beverages",
+    "subCategories": [
+      { "id": "iced-coffee", "slug": "iced-coffee", "title": "Iced Coffee" },
+      { "id": "iced-tea", "slug": "iced-tea", "title": "Iced Tea" }
+    ]
+  },
+  {
+    "id": "organic-spices",
+    "slug": "organic-spices",
+    "title": "Organic Spices",
+    "subCategories": [
+      {
+        "id": "ceylon-organic-spices",
+        "slug": "ceylon-organic-spices",
+        "title": "Ceylon Organic Spices"
+      }
+    ]
+  },
+  {
+    "id": "coconut-based",
+    "slug": "coconut-based",
+    "title": "Coconut Based",
+    "subCategories": [
+      {
+        "id": "coconut-water",
+        "slug": "coconut-water",
+        "title": "Coconut Water & King Coconut Water"
+      },
+      {
+        "id": "coconut-milk",
+        "slug": "coconut-milk",
+        "title": "Coconut Milk & Coconut Cream"
+      },
+      {
+        "id": "coconut-flour",
+        "slug": "coconut-flour",
+        "title": "Coconut Flour & Coconut Milk Powder"
+      },
+      {
+        "id": "virgin-coconut-oil",
+        "slug": "virgin-coconut-oil",
+        "title": "Virgin Coconut Oil"
+      },
+      {
+        "id": "dedicated-coconut",
+        "slug": "dedicated-coconut",
+        "title": "Dedicated Coconut"
+      }
+    ]
+  }
+]

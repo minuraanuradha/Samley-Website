@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | Samley Teas</title>
+
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="navbar"></header>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li id="breadcrumb-category"></li>
+                <li id="breadcrumb-product"></li>
+            </ul>
+        </nav>
+
+        <!-- Product Section -->
+        <section class="product-detail">
+
+            <!-- Gallery -->
+            <div class="product-gallery">
+                <img src="" alt="" id="product-main-image">
+
+                <div class="product-thumbnails">
+                    <!-- thumbnails injected here -->
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="product-info">
+
+                <!-- Tags -->
+                <ul class="product-tags" id="product-tags"></ul>
+
+                <!-- Title -->
+                <h1 class="h2" id="product-title">
+                    Product Name
+                </h1>
+
+                <!-- Rating -->
+                <div class="product-rating">
+                    <span id="product-stars"></span>
+                    <span id="product-review-count"></span>
+                </div>
+
+                <!-- Pack Info -->
+                <p class="product-pack p-s" id="product-pack"></p>
+
+                <!-- Short Description -->
+                <p class="product-short-description p-m" id="product-short-description"></p>
+
+                <!-- Price -->
+                <p class="product-price" id="product-price"></p>
+
+                <!-- Meta Info -->
+                <ul class="product-meta">
+                    <li><strong>Brand:</strong> <span id="product-brand"></span></li>
+                    <li><strong>Item Form:</strong> <span id="product-item-form"></span></li>
+                    <li><strong>Tea Variety:</strong> <span id="product-variety"></span></li>
+                    <li><strong>Unit Count:</strong> <span id="product-unit-count"></span></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Description -->
+        <section class="product-description">
+            <h3 class="h4">Description</h3>
+            <p id="product-long-description"></p>
+        </section>
+
+        <!-- Features -->
+        <section class="product-features">
+            <h3 class="h4">Key Features</h3>
+            <ul id="product-features"></ul>
+        </section>
+
+        <!-- Related Products (later) -->
+        <section class="related-products">
+            <h3 class="h4">You may also like</h3>
+            <div class="products-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
+    <!--Script -->
+    <script src="./assets/js/include.js"></script>
+</body>
+
+</html>

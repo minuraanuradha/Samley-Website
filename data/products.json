@@ -1,0 +1,207 @@
+[
+  {
+    "id": "wiry-lady-op1",
+    "slug": "wiry-lady-op1-black-tea",
+    "mainCategory": "teas",
+    "subCategory": "black-tea",
+
+    "name": "Wiry Lady OP1",
+    "shortDescription": "Premium loose leaf Ceylon black tea with rich aroma and smooth finish.",
+    "tags": ["Smooth", "Rich", "Aromatic"],
+    "packInfo": "125g Loose Leaf",
+    "thumbnailImage": "/assets/images/products/teas/wiry-lady-op1-thumb.png",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Loose Leaf",
+    "flavor": "Wiry Lady",
+    "teaVariety": "Ceylon Black Tea",
+    "unitCount": "125g",
+
+    "price": 12.99,
+    "currency": "USD",
+    "stock": 14,
+    "rating": 4.9,
+    "reviewCount": 109,
+
+    "seoTitle": "SAMLEY CEYLON – Loose Leaf Tea Ceylon Black Wiry Lady OP1 Premium Luxury Gourmet Tea from Sri Lanka – 125g",
+    "seoDescription": "Experience premium Ceylon black tea crafted from long wiry leaves, delivering a rich aroma and smooth golden liquor.",
+
+    "longDescription": "Experience authentic Ceylon black tea with Wiry Lady OP1, featuring clean long-wiry dark leaves and a golden-orange brew. This premium loose leaf tea offers a malt-infused aroma and a smooth, sophisticated taste crafted for true tea connoisseurs.",
+
+    "features": [
+      "100% pure Ceylon black tea",
+      "Handpicked long wiry leaves",
+      "Rich aroma with smooth finish",
+      "Ideal for daily luxury tea moments"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/teas/wiry-lady-op1-1.png",
+      "/assets/images/products/teas/wiry-lady-op1-2.png"
+    ]
+  },
+
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "/assets/images/products/beverages/milk-iced-tea-thumb.png",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+
+  {
+    "id": "green-tea-classic",
+    "slug": "classic-green-tea",
+    "mainCategory": "teas",
+    "subCategory": "green-tea",
+
+    "name": "Classic Green Tea",
+    "shortDescription": "Light and refreshing green tea with natural antioxidants.",
+    "tags": ["Light", "Fresh", "Pure"],
+    "packInfo": "50 Tea Bags",
+    "thumbnailImage": "/assets/images/products/teas/green-tea-thumb.png",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Tea Bags",
+    "flavor": "Pure Green Tea",
+    "teaVariety": "Ceylon Green Tea",
+    "unitCount": "50 Tea Bags",
+
+    "price": 9.99,
+    "currency": "USD",
+    "stock": 32,
+    "rating": 4.8,
+    "reviewCount": 84,
+
+    "seoTitle": "SAMLEY CEYLON Classic Green Tea – Pure Ceylon Green Tea Bags Rich in Antioxidants – 50 Tea Bags",
+    "seoDescription": "Enjoy a light and refreshing cup of pure Ceylon green tea with natural antioxidants.",
+
+    "longDescription": "Crafted from carefully selected Ceylon tea leaves, our Classic Green Tea delivers a fresh, smooth taste with every sip. Ideal for mindful tea moments and daily wellness rituals.",
+
+    "features": [
+      "Naturally rich in antioxidants",
+      "Light and refreshing taste",
+      "Convenient tea bag format",
+      "Perfect for daily wellness"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/teas/green-tea-1.png"
+    ]
+  },
+
+  {
+    "id": "organic-cinnamon",
+    "slug": "ceylon-organic-cinnamon",
+    "mainCategory": "organic-spices",
+    "subCategory": "ceylon-organic-spices",
+
+    "name": "Ceylon Organic Cinnamon",
+    "shortDescription": "Pure organic Ceylon cinnamon with warm, aromatic spice notes.",
+    "tags": ["Organic", "Aromatic", "Pure"],
+    "packInfo": "100g Pack",
+    "thumbnailImage": "/assets/images/products/spices/cinnamon-thumb.png",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Powder",
+    "flavor": "Cinnamon",
+    "teaVariety": "Organic Spice",
+    "unitCount": "100g",
+
+    "price": 6.99,
+    "currency": "USD",
+    "stock": 40,
+    "rating": 4.9,
+    "reviewCount": 51,
+
+    "seoTitle": "SAMLEY CEYLON Organic Ceylon Cinnamon – Pure Aromatic Organic Spice 100g",
+    "seoDescription": "Premium organic Ceylon cinnamon with warm aroma and authentic flavor.",
+
+    "longDescription": "Our Organic Ceylon Cinnamon is sourced from sustainable farms and carefully processed to preserve its natural aroma and flavor. Ideal for teas, beverages, and culinary use.",
+
+    "features": [
+      "100% organic certified",
+      "Warm and aromatic flavor",
+      "Sustainably sourced",
+      "Ideal for teas and cooking"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/spices/cinnamon-1.png"
+    ]
+  },
+
+  {
+    "id": "virgin-coconut-oil",
+    "slug": "virgin-coconut-oil",
+    "mainCategory": "coconut-based",
+    "subCategory": "virgin-coconut-oil",
+
+    "name": "Virgin Coconut Oil",
+    "shortDescription": "Cold-pressed virgin coconut oil for wellness and cooking.",
+    "tags": ["Pure", "Natural", "Cold-Pressed"],
+    "packInfo": "500ml Bottle",
+    "thumbnailImage": "/assets/images/products/coconut/coconut-oil-thumb.png",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Oil",
+    "flavor": "Natural Coconut",
+    "teaVariety": "Coconut Product",
+    "unitCount": "500ml",
+
+    "price": 14.99,
+    "currency": "USD",
+    "stock": 22,
+    "rating": 4.8,
+    "reviewCount": 67,
+
+    "seoTitle": "SAMLEY CEYLON Virgin Coconut Oil – Cold Pressed Pure Coconut Oil for Cooking and Wellness 500ml",
+    "seoDescription": "Cold-pressed virgin coconut oil crafted for purity, wellness, and everyday cooking.",
+
+    "longDescription": "Extracted using cold-pressed methods, our Virgin Coconut Oil retains natural nutrients and aroma. Perfect for cooking, skincare, and holistic wellness routines.",
+
+    "features": [
+      "Cold-pressed extraction",
+      "No additives or preservatives",
+      "Multi-purpose usage",
+      "Sustainably sourced coconuts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/coconut/coconut-oil-1.png"
+    ]
+  }
+]

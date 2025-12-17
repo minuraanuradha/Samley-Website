@@ -1,0 +1,283 @@
+/* BASE RESET */
+/* ___________________________________________________ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    /* 1rem = 16px */
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 
+   Neue Montreal – Web Fonts */
+/* ___________________________________________________ */
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-Light.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-Regular.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-Italic.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-Medium.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-Bold.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("/assets/fonts/neue-montreal/NeueMontreal-BoldItalic.woff2") format("woff2"),
+        url("/assets/fonts/neue-montreal/NeueMontreal-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* DESIGN TOKENS  */
+/* ___________________________________________________ */
+
+:root {
+    /* Brand */
+    --color-primary: #00AE9C;
+    --color-primary-contrast: #FFFFFF;
+
+    /* Backgrounds */
+    --color-bg-white: #FFFFFF;
+    --color-bg-primary: #00AE9C;
+    --color-bg-muted: #F4FBFB;
+
+    /* Text */
+    --color-text-primary: #231F20;
+    --color-text-secondary: #00AE9C;
+    --color-text-muted: #6F7C7C;
+
+    /* Typography */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Neue Montreal", sans-serif;
+
+    /* Font Sizes */
+    /* Headings */
+
+    /* H1
+     Desktop: 60px / 400
+     Mobile:  44px / 400 */
+    --fs-h1: clamp(2.75rem, 3vw + 1rem, 3.75rem);
+
+    /* H2
+     Desktop: 48px / 400
+     Mobile:  36px / 400 */
+    --fs-h2: clamp(2.25rem, 2.5vw + 1rem, 3rem);
+
+    /* H3 (reserved / balanced scale) */
+    --fs-h3: clamp(1.75rem, 1.8vw + 1rem, 2.25rem);
+
+    /* H4 (reserved / balanced scale) */
+    --fs-h4: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+
+    /* H5
+     Desktop: 24px / 500
+     Mobile:  24px */
+    --fs-h5: 1.5rem;
+
+    /* H6
+     Desktop: 20px / 500
+     Mobile:  20px */
+    --fs-h6: 1.25rem;
+
+    /* Paragraphs */
+
+    /* P – Small
+     Desktop & Mobile: 14px */
+    --fs-p-s: 0.875rem;
+
+    /* P – Medium
+     Desktop: 15px
+     Mobile:  14px */
+    --fs-p-m: clamp(0.875rem, 0.3vw + 0.8rem, 0.9375rem);
+
+    /* P – Large
+     Desktop: 16px
+     Mobile:  14px */
+    --fs-p-l: clamp(0.875rem, 0.4vw + 0.85rem, 1rem);
+
+    /* P – Extra Large
+     Desktop & Mobile: 18px */
+    --fs-p-xl: 1.125rem;
+
+    /* Spacing Scale */
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 2.5rem;
+    --space-xxl: 4rem;
+
+    /* Radius */
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --radius-l: 12px;
+
+    /* Shadow */
+    --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* TYPOGRAPHY BASE */
+/* ___________________________________________________ */
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-body);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-main);
+}
+
+.h1 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: var(--fs-h1);
+    line-height: 1.15;
+}
+
+.h2 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: var(--fs-h2);
+    line-height: 1.2;
+}
+
+.h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: var(--fs-h3);
+}
+
+.h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: var(--fs-h4);
+}
+
+.h5 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: var(--fs-h5);
+}
+
+.h6 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: var(--fs-h6);
+}
+
+.p-s {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-p-s);
+    line-height: 1.6;
+}
+
+.p-m {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-p-m);
+    line-height: 1.6;
+}
+
+.p-l {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-p-l);
+    line-height: 1.6;
+}
+
+.p-xl {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: var(--fs-p-xl);
+    line-height: 1.6;
+}
+
+
+
+/* GLOBAL HELPERS (MINIMAL) */
+/* ___________________________________________________ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
