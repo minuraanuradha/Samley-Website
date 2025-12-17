@@ -9,9 +9,9 @@ async function loadComponent(selector, filePath) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadComponent("#navbar", "/components/navbar.html");
+  await loadComponent("#navbar", "components/navbar.html");
 
   await import("../js/navbar.js");
 
-  await loadComponent("#footer", "/components/footer.html");
+  await loadComponent("#footer", "components/footer.html");
 });

@@ -1,7 +1,7 @@
 // js/navbar.js
 
 async function loadCategories() {
-  const res = await fetch("/data/categories.json");
+  const res = await fetch("data/categories.json");
   const categories = await res.json();
 
   categories.forEach(main => {
@@ -15,7 +15,7 @@ async function loadCategories() {
       const li = document.createElement("li");
       const a = document.createElement("a");
 
-      a.href = `/products.html?category=${sub.slug}`;
+      a.href = `products.html?category=${sub.slug}`;
       a.textContent = sub.title;
 
       li.appendChild(a);

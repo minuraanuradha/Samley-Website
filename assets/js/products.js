@@ -9,7 +9,7 @@ async function loadProducts() {
   const categorySlug = getCategoryFromURL();
   if (!categorySlug) return;
 
-  const res = await fetch("/data/products.json");
+  const res = await fetch("data/products.json");
   const products = await res.json();
 
   const filtered = products.filter(
@@ -30,7 +30,7 @@ function renderProducts(products) {
     card.className = "product-card";
 
     card.innerHTML = `
-      <a href="/product.html?product=${product.slug}">
+      <a href="product.html?product=${product.slug}">
         <img src="${product.thumbnailImage}" alt="${product.name}">
       </a>
       <h5>${product.name}</h5>
