@@ -1,23 +1,17 @@
 // js/include.js
 
-async function loadComponent(selector, filePath, callback) {
+async function loadComponent(selector, filePath) {
   const container = document.querySelector(selector);
   if (!container) return;
 
-  try {
-    const response = await fetch(filePath);
-    if (!response.ok) throw new Error(`Failed to load ${filePath}`);
-    container.innerHTML = await response.text();
-    if (callback) callback();
-  } catch (error) {
-    console.error(error);
-  }
+  const res = await fetch(filePath);
+  container.innerHTML = await res.text();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("#navbar", "/components/navbar.html", () => {
-    import("../js/navbar.js");
-  });
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadComponent("#navbar", "/components/navbar.html");
 
-  loadComponent("#footer", "/components/footer.html");
+  await import("../js/navbar.js");
+
+  await loadComponent("#footer", "/components/footer.html");
 });
