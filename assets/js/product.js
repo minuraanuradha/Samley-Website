@@ -85,6 +85,8 @@ function injectProductData(product) {
         thumbs.appendChild(t);
     });
 
+    enableGalleryInteraction();
+
     // Features
     const features = document.getElementById("product-features");
     product.features.forEach(f => {
@@ -101,4 +103,16 @@ function injectProductData(product) {
         product.name;
 }
 
+// Gallery interaction
+function enableGalleryInteraction() {
+  const mainImage = document.getElementById("product-main-image");
+  const thumbnails = document.querySelectorAll(".product-thumbnails img");
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener("click", () => {
+      mainImage.src = thumb.src;
+      mainImage.alt = thumb.alt;
+    });
+  });
+}
 document.addEventListener("DOMContentLoaded", loadProduct);
