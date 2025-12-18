@@ -79,8 +79,8 @@ ul {
 
 @font-face {
     font-family: "Neue Montreal";
-    src: url("assets/fonts/neue-montreal/NeueMontreal-Bold.woff2") format("woff2"),
-        url("assets/fonts/neue-montreal/NeueMontreal-Bold.woff") format("woff");
+    src: url("../fonts/neue-montreal/NeueMontreal-Bold.woff2") format("woff2"),
+        url("../fonts/neue-montreal/NeueMontreal-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -109,7 +109,8 @@ ul {
     --color-bg-muted: #F4FBFB;
 
     /* Text */
-    --color-text-primary: #231F20;
+    --color-text-black: #231F20;
+    --color-text-white: #FFFFFF;
     --color-text-secondary: #00AE9C;
     --color-text-muted: #6F7C7C;
 
@@ -265,13 +266,12 @@ body {
 /* GLOBAL HELPERS (MINIMAL) */
 /* ___________________________________________________ */
 
-.container {
+.main-container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: var(--space-m);
-    padding-right: var(--space-m);
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .text-center {
@@ -279,5 +279,74 @@ body {
 }
 
 .hidden {
-    display: none;
+      display: none !important;
+}
+
+.btn-01 {
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    padding: 12px 24px;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-m);
+    font-family: var(--font-body);
+    font-size: var(--fs-p-s);
+    text-transform: uppercase;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+.btn-01:hover {
+    background-color: var(--color-bg-white);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-bg-primary);
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 24px;
+}
+/* =========================
+   Small devices (≥576px)
+   ========================= */
+@media (min-width: 576px) {
+.container {
+    padding: 0 24px;
+}
+}
+
+/* =========================
+   Medium devices / Tablets (≥768px)
+   ========================= */
+@media (min-width: 768px) {
+.container {
+    padding: 0 36px;
+}
+}
+
+/* =========================
+   Large devices / Laptops (≥992px)
+   ========================= */
+@media (min-width: 992px) {
+.container {
+    padding: 0 80px;
+}
+}
+
+/* =========================
+   Extra large devices / Desktops (≥1200px)
+   ========================= */
+@media (min-width: 1200px) {
+.container {
+    padding: 0 80px;
+}
+}
+
+/* =========================
+   2XL screens (≥1400px)
+   ========================= */
+@media (min-width: 1400px) {
+.container {
+    padding: 0 100px;
+}
 }
