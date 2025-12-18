@@ -1,15 +1,17 @@
 // js/products.js
 
 function getCategoryFromURL() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("category");
+    const params = new URLSearchParams(window.location.search);
+    return params.get("category");
 }
 
 async function loadProducts() {
   const categorySlug = getCategoryFromURL();
   if (!categorySlug) return;
 
-  const res = await fetch("data/products.json");
+  updateCategoryTitle(categorySlug);
+
+  const res = await fetch("/data/products.json");
   const products = await res.json();
 
   const filtered = products.filter(
@@ -19,17 +21,31 @@ async function loadProducts() {
   renderProducts(filtered);
 }
 
+async function updateCategoryTitle(categorySlug) {
+    const res = await fetch("/data/categories.json");
+    const categories = await res.json();
+
+    categories.forEach(main => {
+        main.subCategories.forEach(sub => {
+            if (sub.slug === categorySlug) {
+                document.getElementById("category-title").textContent = sub.title;
+            }
+        });
+    });
+}
+
+
 function renderProducts(products) {
-  const grid = document.getElementById("products-grid");
-  if (!grid) return;
+    const grid = document.getElementById("products-grid");
+    if (!grid) return;
 
-  grid.innerHTML = "";
+    grid.innerHTML = "";
 
-  products.forEach(product => {
-    const card = document.createElement("article");
-    card.className = "product-card";
+    products.forEach(product => {
+        const card = document.createElement("article");
+        card.className = "product-card";
 
-    card.innerHTML = `
+        card.innerHTML = `
       <a href="product.html?product=${product.slug}">
         <img src="${product.thumbnailImage}" alt="${product.name}">
       </a>
@@ -38,8 +54,8 @@ function renderProducts(products) {
       <p>${product.packInfo}</p>
     `;
 
-    grid.appendChild(card);
-  });
+        grid.appendChild(card);
+    });
 }
 
 document.addEventListener("DOMContentLoaded", loadProducts);
