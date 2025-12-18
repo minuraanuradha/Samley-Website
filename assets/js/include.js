@@ -11,7 +11,10 @@ async function loadComponent(selector, filePath) {
 document.addEventListener("DOMContentLoaded", async () => {
   await loadComponent("#navbar", "components/navbar.html");
 
-  await import("../js/navbar.js");
+  // Load navbar.js as a script
+  const script = document.createElement('script');
+  script.src = '../assets/js/navbar.js';
+  document.head.appendChild(script);
 
   await loadComponent("#footer", "components/footer.html");
 });
