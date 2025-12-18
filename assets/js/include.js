@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Load navbar.js as a script
   const script = document.createElement('script');
-  script.src = '../assets/js/navbar.js';
+  script.src = 'assets/js/navbar.js';
   document.head.appendChild(script);
 
   await loadComponent("#footer", "components/footer.html");
