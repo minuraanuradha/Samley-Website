@@ -1,91 +1,104 @@
 // assets/js/product.js
 
 function getProductSlug() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get("product");
+    const params = new URLSearchParams(window.location.search);
+    return params.get("product");
 }
 
 async function loadProduct() {
-  const slug = getProductSlug();
-  if (!slug) return;
+    const slug = getProductSlug();
+    if (!slug) return;
 
-  const res = await fetch("/data/products.json");
-  const products = await res.json();
+    const res = await fetch("/data/products.json");
+    const products = await res.json();
 
-  const product = products.find(p => p.slug === slug);
-  if (!product) return;
+    const product = products.find(p => p.slug === slug);
+    if (!product) return;
 
-  injectProductData(product);
+    injectProductData(product);
 }
 
 function injectProductData(product) {
 
-  // Title
-  document.getElementById("product-title").textContent = product.name;
+    // SEO Title
+    if (product.seoTitle) {
+        document.title = product.seoTitle;
+    }
 
-  // Short description
-  document.getElementById("product-short-description").textContent =
-    product.shortDescription;
+    // SEO Description
+    if (product.seoDescription) {
+        const metaDesc = document.getElementById("meta-description");
+        if (metaDesc) {
+            metaDesc.setAttribute("content", product.seoDescription);
+        }
+    }
 
-  // Long description
-  document.getElementById("product-long-description").textContent =
-    product.longDescription;
+    // Title
+    document.getElementById("product-title").textContent = product.name;
 
-  // Pack info
-  document.getElementById("product-pack").textContent = product.packInfo;
+    // Short description
+    document.getElementById("product-short-description").textContent =
+        product.shortDescription;
 
-  // Price
-  document.getElementById("product-price").textContent =
-    `${product.currency} ${product.price}`;
+    // Long description
+    document.getElementById("product-long-description").textContent =
+        product.longDescription;
 
-  // Meta
-  document.getElementById("product-brand").textContent = product.brand;
-  document.getElementById("product-item-form").textContent = product.itemForm;
-  document.getElementById("product-variety").textContent = product.teaVariety;
-  document.getElementById("product-unit-count").textContent = product.unitCount;
+    // Pack info
+    document.getElementById("product-pack").textContent = product.packInfo;
 
-  // Rating
-  document.getElementById("product-review-count").textContent =
-    `(${product.reviewCount})`;
+    // Price
+    document.getElementById("product-price").textContent =
+        `${product.currency} ${product.price}`;
 
-  document.getElementById("product-stars").textContent =
-    "★".repeat(Math.round(product.rating));
+    // Meta
+    document.getElementById("product-brand").textContent = product.brand;
+    document.getElementById("product-item-form").textContent = product.itemForm;
+    document.getElementById("product-variety").textContent = product.teaVariety;
+    document.getElementById("product-unit-count").textContent = product.unitCount;
 
-  // Tags
-  const tagsEl = document.getElementById("product-tags");
-  product.tags.forEach(tag => {
-    const li = document.createElement("li");
-    li.textContent = tag;
-    tagsEl.appendChild(li);
-  });
+    // Rating
+    document.getElementById("product-review-count").textContent =
+        `(${product.reviewCount})`;
 
-  // Gallery
-  const mainImage = document.getElementById("product-main-image");
-  mainImage.src = product.galleryImages[0];
-  mainImage.alt = product.name;
+    document.getElementById("product-stars").textContent =
+        "★".repeat(Math.round(product.rating));
 
-  const thumbs = document.querySelector(".product-thumbnails");
-  product.galleryImages.forEach(img => {
-    const t = document.createElement("img");
-    t.src = img;
-    t.alt = product.name;
-    thumbs.appendChild(t);
-  });
+    // Tags
+    const tagsEl = document.getElementById("product-tags");
+    product.tags.forEach(tag => {
+        const li = document.createElement("li");
+        li.textContent = tag;
+        tagsEl.appendChild(li);
+    });
 
-  // Features
-  const features = document.getElementById("product-features");
-  product.features.forEach(f => {
-    const li = document.createElement("li");
-    li.textContent = f;
-    features.appendChild(li);
-  });
+    // Gallery
+    const mainImage = document.getElementById("product-main-image");
+    mainImage.src = product.galleryImages[0];
+    mainImage.alt = product.name;
 
-  // Breadcrumbs
-  document.getElementById("breadcrumb-category").textContent =
-    product.subCategory.replace("-", " ");
+    const thumbs = document.querySelector(".product-thumbnails");
+    product.galleryImages.forEach(img => {
+        const t = document.createElement("img");
+        t.src = img;
+        t.alt = product.name;
+        thumbs.appendChild(t);
+    });
 
-  document.getElementById("breadcrumb-product").textContent =
-    product.name;
+    // Features
+    const features = document.getElementById("product-features");
+    product.features.forEach(f => {
+        const li = document.createElement("li");
+        li.textContent = f;
+        features.appendChild(li);
+    });
+
+    // Breadcrumbs
+    document.getElementById("breadcrumb-category").textContent =
+        product.subCategory.replace("-", " ");
+
+    document.getElementById("breadcrumb-product").textContent =
+        product.name;
 }
 
 document.addEventListener("DOMContentLoaded", loadProduct);
