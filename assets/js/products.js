@@ -6,20 +6,35 @@ function getCategoryFromURL() {
 }
 
 async function loadProducts() {
-  const categorySlug = getCategoryFromURL();
-  if (!categorySlug) return;
+    const categorySlug = getCategoryFromURL();
+    const emptyState = document.getElementById("products-empty");
+    const grid = document.getElementById("products-grid");
 
-  updateCategoryTitle(categorySlug);
+    if (!categorySlug) {
+        emptyState.textContent = "Please select a product category.";
+        emptyState.classList.remove("hidden");
+        return;
+    }
 
-  const res = await fetch("/data/products.json");
-  const products = await res.json();
+    updateCategoryTitle(categorySlug);
 
-  const filtered = products.filter(
-    p => p.subCategory === categorySlug
-  );
+    const res = await fetch("/data/products.json");
+    const products = await res.json();
 
-  renderProducts(filtered);
+    const filtered = products.filter(
+        p => p.subCategory === categorySlug
+    );
+
+    if (filtered.length === 0) {
+        emptyState.textContent = "No products found in this category.";
+        emptyState.classList.remove("hidden");
+        return;
+    }
+
+    emptyState.classList.add("hidden");
+    renderProducts(filtered);
 }
+
 
 async function updateCategoryTitle(categorySlug) {
     const res = await fetch("/data/categories.json");
