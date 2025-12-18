@@ -18,7 +18,7 @@ async function loadProducts() {
 
     updateCategoryTitle(categorySlug);
 
-    const res = await fetch("/data/products.json");
+    const res = await fetch("data/products.json");
     const products = await res.json();
 
     const filtered = products.filter(
@@ -37,7 +37,7 @@ async function loadProducts() {
 
 
 async function updateCategoryTitle(categorySlug) {
-    const res = await fetch("/data/categories.json");
+    const res = await fetch("data/categories.json");
     const categories = await res.json();
 
     categories.forEach(main => {
