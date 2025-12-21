@@ -75,21 +75,21 @@
 
 /*background*/
 #hero_contact {
-    background-image: url(/assets/images/hero/Contact_Cover_M.png);
+    background-image: url(../images/hero/Contact_Cover_M.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #hero_story {
-    background-image: url(/assets/images/hero/OurStory_Cover_M.png);
+    background-image: url(../images/hero/OurStory_Cover_M.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #hero_blogs {
-    background-image: url(/assets/images/hero/Blogs_Cover_M.png);
+    background-image: url(../images/hero/Blogs_Cover_M.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -161,21 +161,21 @@
     /*Background*/
 
     #hero_contact {
-        background-image: url(/assets/images/hero/Contact_Cover.jpg);
+        background-image: url(../images/hero/Contact_Cover.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
     #hero_story {
-        background-image: url(/assets/images/hero/OurStory_Cover.jpg);
+        background-image: url(../images/hero/OurStory_Cover.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
 
     #hero_blogs {
-        background-image: url(/assets/images/hero/Blogs_Cover.jpg);
+        background-image: url(../images/hero/Blogs_Cover.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
