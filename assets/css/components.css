@@ -181,3 +181,156 @@
     }
 
 }
+
+/* --------------- Instagram-feed Section --------------------- */
+/* --------------------------------------------------  */
+
+.instagram-container {
+    width: 100%;
+    padding: 30px 0 30px 24px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.instagram-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--color-bg-white);
+}
+
+.instagram-header div h2 {
+    color: var(--color-text-secondary);
+}
+
+.instagram-header div p {
+    color: var(--color-bg-black);
+}
+
+.instagram-feed-wrapper {
+    width: 100%;
+}
+
+.instagram-carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.instagram-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.instagram-cards-wrapper {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    gap: 16px;
+    padding: 10px 30px 10px 0px;
+}
+
+.instagram-card {
+    width: 65vw;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   Small devices (≥576px)
+   ========================= */
+@media (min-width: 480px) {
+    .instagram-container {
+        padding: 30px 24px 30px 24px;
+    }
+
+    .instagram-feed-wrapper {
+        width: 100%;
+    }
+
+    .instagram-carousel {
+        width: 100%;
+    }
+
+    .instagram-cards-wrapper {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px 10px 0px;
+    }
+
+    .instagram-card {
+        width: 30%;
+        aspect-ratio: 1;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: box-shadow 0.3s ease;
+        background-color: aqua;
+    }
+}
+
+/* =========================
+   Medium devices / Tablets (≥768px)
+   ========================= */
+@media (min-width: 768px) {
+    .instagram-container {
+        padding: 30px 36px 30px 36px;
+    }
+}
+
+/* =========================
+   Large devices / Laptops (≥992px)
+   ========================= */
+@media (min-width: 992px) {
+    .instagram-container {
+        padding: 80px 80px 80px 80px;
+    }
+}
+
+/* =========================
+   Extra large devices / Desktops (≥1200px)
+   ========================= */
+@media (min-width: 1200px) {
+    .instagram-container {
+        padding: 80px 80px 80px 80px;
+    }
+}
+
+/* =========================
+   2XL screens (≥1400px)
+   ========================= */
+@media (min-width: 1400px) {
+    .instagram-container {
+        padding: 80px 100px 80px 100px;
+    }
+}
+ /*Post*/
+#instagram-post01{
+    background-image: url(../images/instagram/post01.jpg);
+    background-size: cover;
+}
+#instagram-post02{
+    background-image: url(../images/instagram/post02.jpg);
+    background-size: cover;
+}
+#instagram-post03{
+    background-image: url(../images/instagram/post03.jpg);
+    background-size: cover;
+}
+#instagram-post04{
+    background-image: url(../images/instagram/post04.jpg);
+    background-size: cover;
+}
+#instagram-post05{
+    background-image: url(../images/instagram/post05.jpg);
+    background-size: cover;
+}
