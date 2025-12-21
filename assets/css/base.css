@@ -107,6 +107,7 @@ ul {
     --color-bg-white: #FFFFFF;
     --color-bg-primary: #00AE9C;
     --color-bg-muted: #F4FBFB;
+    --color-bg-black: #000000;
 
     /* Text */
     --color-text-black: #231F20;
@@ -293,12 +294,16 @@ body {
     cursor: pointer;
     height: fit-content;
     width: fit-content;
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
 }
 
 .btn-01:hover {
-    background-color: var(--color-bg-white);
-    color: var(--color-text-secondary);
-    border: 1px solid var(--color-bg-primary);
+    background-color: var(--color-bg-black);
+    color: var(--color-text-white);
+    border: 1px solid var(--color-bg-black);
 }
 
 .btn-02 {
@@ -312,10 +317,14 @@ body {
     cursor: pointer;
     height: fit-content;
     width: fit-content;
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
 }
 
 .btn-02:hover {
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-bg-black);
     color: var(--color-text-white);
     border: 1px solid var(--color-bg-white);
 }
