@@ -2,7 +2,7 @@
    Smallest devices and all (≥0)
    ========================= */
 .footer {
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,8 @@
     flex-direction: column;
     color: var(--color-text-white);
     gap: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     max-width: 1440px;
 }
 
@@ -39,7 +40,7 @@
     align-items: center;
     width: 100%;
     gap: 16px;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 /*footer seach bar*/
@@ -106,7 +107,7 @@
 .location {
     display: flex;
     flex-direction: column;
-    padding-top:20px ;
+    padding-top: 20px;
 }
 
 .location-section-01 {
@@ -161,10 +162,10 @@
 }
 
 .link-tabs a {
-    font-size: var(--fs-p-l);
+    font-size: var(--fs-p-s);
     color: var(--color-text-white);
     font-family: var(--font-body);
-    padding-bottom: 15px ;
+    padding-bottom: 15px;
 }
 
 .link-tabs a:hover {
@@ -175,12 +176,13 @@
 }
 
 .link-tabs p {
-    font-size: var(--fs-p-l);
+    font-size: var(--fs-p-s);
     color: var(--color-text-white);
     font-family: var(--font-body);
 }
+
 .link-tabs-secondary p {
-    font-size: var(--fs-p-l);
+    font-size: var(--fs-p-s);
     color: var(--color-text-white);
     font-family: var(--font-body);
 }
@@ -247,9 +249,10 @@
     border-color: #FF0000;
     color: #fff;
 }
-    .top-social{
-        display: none;
-    }
+
+.top-social {
+    display: none;
+}
 
 /* =========================
    Small devices (≥576px)
@@ -273,6 +276,7 @@
         font-size: 9rem;
         letter-spacing: 1rem;
     }
+
     .location {
         display: flex;
         width: 100%;
@@ -292,14 +296,17 @@
 
     .link-tabs-secondary {
         display: none;
-    }    
+    }
+
     .sp {
-    display: block;}
+        display: block;
+    }
+
     .footer-social {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-}
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
 }
 
 /* =========================
@@ -308,14 +315,15 @@
 @media (min-width: 992px) {
 
     .footer-main {
-        padding-bottom: 0;
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
 
     .footer-main-top {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        padding: 20px 0;
+        padding: 0 0 20px 0;
     }
 
     .footer-logo {
@@ -338,24 +346,28 @@
         width: 80%;
     }
 
-    .top-social{
+    .top-social {
         display: block;
         padding-top: 40px;
     }
-    .footer-social-top{
+
+    .footer-social-top {
         display: flex;
         flex-direction: row;
         gap: 10px;
     }
-    .footer-social-top li{
+
+    .footer-social-top li {
         background-color: #474747;
-        padding: 8px 16px;
+        padding: 6px 14px;
         border-radius: 46px;
         font-size: var(--fs-p-s);
     }
-    .footer-social-top li:hover{
+
+    .footer-social-top li:hover {
         background-color: var(--color-text-secondary);
     }
+
     .footer-column-bottom {
         display: flex;
         flex-direction: column;
@@ -392,27 +404,28 @@
     }
 
     .link-tabs a {
-        font-size: var(--fs-p-l);
+        font-size: var(--fs-p-s);
         color: var(--color-text-white);
         font-family: var(--font-body);
     }
 
     .link-tabs a:hover {
-        font-size: var(--fs-p-l);
+        font-size: var(--fs-p-s);
         color: var(--color-text-secondary);
         text-decoration: underline;
         font-family: var(--font-body);
     }
 
     .link-tabs p {
-        font-size: var(--fs-p-l);
+        font-size: var(--fs-p-s);
         color: var(--color-text-white);
         font-family: var(--font-body);
     }
 
     .sp {
-    display: block;
-}
+        display: block;
+    }
+
     /* F----------------- */
     .footer-main-bottom {
         display: flex;
@@ -435,10 +448,12 @@
 
     .footer-social {
         display: none;
-    }.footer-bottom {
+    }
 
-    padding: 45px 0 ;
-}
+    .footer-bottom {
+
+        padding: 45px 0;
+    }
 }
 
 /* =========================
@@ -450,5 +465,3 @@
         letter-spacing: 1.5rem;
     }
 }
-
-

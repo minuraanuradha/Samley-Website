@@ -279,7 +279,7 @@ body {
 }
 
 .hidden {
-      display: none !important;
+    display: none !important;
 }
 
 .btn-01 {
@@ -290,63 +290,88 @@ body {
     border-radius: var(--radius-m);
     font-family: var(--font-body);
     font-size: var(--fs-p-s);
-    text-transform: uppercase;
     cursor: pointer;
     height: fit-content;
     width: fit-content;
 }
+
 .btn-01:hover {
     background-color: var(--color-bg-white);
     color: var(--color-text-secondary);
     border: 1px solid var(--color-bg-primary);
 }
 
+.btn-02 {
+    background-color: transparent;
+    color: var(--color-text-white);
+    padding: 12px 24px;
+    border: 1px solid var(--color-bg-white);
+    border-radius: var(--radius-m);
+    font-family: var(--font-body);
+    font-size: var(--fs-p-s);
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+
+.btn-02:hover {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-white);
+    border: 1px solid var(--color-bg-white);
+}
 
 .container {
     width: 100%;
     padding: 0 24px;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* =========================
    Small devices (≥576px)
    ========================= */
 @media (min-width: 576px) {
-.container {
-    padding: 0 24px;
-}
+    .container {
+        padding: 0 24px;
+    }
 }
 
 /* =========================
    Medium devices / Tablets (≥768px)
    ========================= */
 @media (min-width: 768px) {
-.container {
-    padding: 0 36px;
-}
+    .container {
+        padding: 0 36px;
+    }
 }
 
 /* =========================
    Large devices / Laptops (≥992px)
    ========================= */
 @media (min-width: 992px) {
-.container {
-    padding: 0 80px;
-}
+    .container {
+        padding: 0 80px;
+    }
 }
 
 /* =========================
    Extra large devices / Desktops (≥1200px)
    ========================= */
 @media (min-width: 1200px) {
-.container {
-    padding: 0 80px;
-}
+    .container {
+        padding: 0 80px;
+    }
 }
 
 /* =========================
    2XL screens (≥1400px)
    ========================= */
 @media (min-width: 1400px) {
-.container {
-    padding: 0 100px;
-}
+    .container {
+        padding: 0 100px;
+    }
 }
