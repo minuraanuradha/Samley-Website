@@ -103,9 +103,8 @@
     /*Hero Section*/
     .hero {
         height: 85dvh;
-        max-height: 708px;
+        max-height: 750px;
         width: 100%;
-        max-width: 1440px;
         display: flex;
         justify-content: center;
         align-items: end;
