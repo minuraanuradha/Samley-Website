@@ -28,20 +28,44 @@
     <header id="navbar"></header>
 
     <!-- MAIN CONTENT -->
-    <main class="container" style="height: 50vh;">
+    <main class="products-container-main">
 
-        <header class="products-header" style="padding-top: 150px;">
-            <h1 class="h2" id="category-title">Products</h1>
-        </header>
+        <div class="products-container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <ul class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
 
-        <!-- Products Grid -->
-        <section class="products-grid" id="products-grid">
-            <!-- product cards injected here -->
-        </section>
+                    <li>
+                        <a href="products.html">Our Products</a>
+                    </li>
 
-        <p class="products-empty-state p-m hidden" id="products-empty">
-            No products found in this category.
-        </p>
+                    <li id="breadcrumb-main-category"></li>
+
+                    <li id="breadcrumb-sub-category" class=""></li>
+
+                    <!-- Only used on product page 
+        <li id="breadcrumb-product" class="hidden"></li>-->
+                </ul>
+            </nav>
+
+
+
+            <header class="products-header">
+                <h2 class="h2" id="category-title">Products</h2>
+                <p class="p-l"> Own the Moment</p>
+                <p class="p-l" id="category-description"> Own the Moment</p>
+            </header>
+
+            <!-- Products Grid -->
+            <section class="products-grid" id="products-grid">
+                <!-- product cards injected here -->
+            </section>
+
+            <p class="products-empty-state p-m hidden text-center" id="products-empty">
+                No products found in this category.
+            </p>
+        </div>
 
     </main>
 

@@ -7,15 +7,30 @@ function getProductSlug() {
 
 async function loadProduct() {
     const slug = getProductSlug();
-    if (!slug) return;
+    if (!slug) {
+        console.log("No product slug in URL");
+        return;
+    }
 
-    const res = await fetch("/data/products.json");
-    const products = await res.json();
+    try {
+        const res = await fetch("data/products.json");
+        if (!res.ok) {
+            console.error("Failed to fetch products.json:", res.status);
+            return;
+        }
+        const products = await res.json();
 
-    const product = products.find(p => p.slug === slug);
-    if (!product) return;
+        const product = products.find(p => p.slug === slug);
+        if (!product) {
+            console.log("Product not found for slug:", slug);
+            return;
+        }
 
-    injectProductData(product);
+        injectProductData(product);
+        updateBreadcrumbForProduct(product);
+    } catch (error) {
+        console.error("Error loading product:", error);
+    }
 }
 
 function injectProductData(product) {
@@ -34,11 +49,11 @@ function injectProductData(product) {
     }
 
     // Title
-    document.getElementById("product-title").textContent = product.name;
+    document.getElementById("product-title").textContent = product.seoTitle;
 
     // Short description
-    document.getElementById("product-short-description").textContent =
-        product.shortDescription;
+    /*document.getElementById("product-short-description").textContent =
+        product.shortDescription;*/
 
     // Long description
     document.getElementById("product-long-description").textContent =
@@ -47,9 +62,9 @@ function injectProductData(product) {
     // Pack info
     document.getElementById("product-pack").textContent = product.packInfo;
 
-    // Price
+    /*
     document.getElementById("product-price").textContent =
-        `${product.currency} ${product.price}`;
+        `${product.currency} ${product.price}`;*/
 
     // Meta
     document.getElementById("product-brand").textContent = product.brand;
@@ -64,13 +79,6 @@ function injectProductData(product) {
     document.getElementById("product-stars").textContent =
         "★".repeat(Math.round(product.rating));
 
-    // Tags
-    const tagsEl = document.getElementById("product-tags");
-    product.tags.forEach(tag => {
-        const li = document.createElement("li");
-        li.textContent = tag;
-        tagsEl.appendChild(li);
-    });
 
     // Gallery
     const mainImage = document.getElementById("product-main-image");
@@ -88,31 +96,59 @@ function injectProductData(product) {
     enableGalleryInteraction();
 
     // Features
-    const features = document.getElementById("product-features");
+    /*const features = document.getElementById("product-features");
     product.features.forEach(f => {
         const li = document.createElement("li");
         li.textContent = f;
         features.appendChild(li);
-    });
+    });*/
 
-    // Breadcrumbs
-    document.getElementById("breadcrumb-category").textContent =
-        product.subCategory.replace("-", " ");
-
-    document.getElementById("breadcrumb-product").textContent =
-        product.name;
 }
+
+function updateBreadcrumbForProduct(product) {
+    fetch("data/categories.json")
+        .then(res => {
+            if (!res.ok) {
+                console.error("Failed to fetch categories.json:", res.status);
+                return;
+            }
+            return res.json();
+        })
+        .then(categories => {
+            if (!categories) return;
+            categories.forEach(main => {
+                main.subCategories.forEach(sub => {
+                    if (sub.slug === product.subCategory) {
+
+                        document.getElementById("breadcrumb-main-category").innerHTML =
+                            `<a href="products.html">${main.title}</a>`;
+
+                        document.getElementById("breadcrumb-sub-category").innerHTML =
+                            `<a href="products.html?category=${sub.slug}">
+                                ${sub.title}
+                             </a>`;
+                    }
+                });
+            });
+        })
+        .catch(error => console.error("Error loading categories:", error));
+
+    const productEl = document.getElementById("breadcrumb-product");
+    productEl.textContent = product.name;
+    productEl.classList.remove("hidden");
+}
+
 
 // Gallery interaction
 function enableGalleryInteraction() {
-  const mainImage = document.getElementById("product-main-image");
-  const thumbnails = document.querySelectorAll(".product-thumbnails img");
+    const mainImage = document.getElementById("product-main-image");
+    const thumbnails = document.querySelectorAll(".product-thumbnails img");
 
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener("click", () => {
-      mainImage.src = thumb.src;
-      mainImage.alt = thumb.alt;
+    thumbnails.forEach(thumb => {
+        thumb.addEventListener("click", () => {
+            mainImage.src = thumb.src;
+            mainImage.alt = thumb.alt;
+        });
     });
-  });
 }
 document.addEventListener("DOMContentLoaded", loadProduct);

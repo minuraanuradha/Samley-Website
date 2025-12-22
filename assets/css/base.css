@@ -223,9 +223,10 @@ body {
 }
 
 .h5 {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-weight: 500;
     font-size: var(--fs-h5);
+    line-height: 29px;
 }
 
 .h6 {
@@ -327,6 +328,29 @@ body {
     background-color: var(--color-bg-black);
     color: var(--color-text-white);
     border: 1px solid var(--color-bg-white);
+}
+
+.btn-03 {
+    background-color: var(--color-bg-black);
+    color: var(--color-text-white);
+    padding: 8px 24px;
+    border: 1px solid var(--color-bg-black);
+    border-radius: var(--radius-m);
+    font-family: var(--font-body);
+    font-size: var(--fs-p-s);
+    cursor: pointer;
+    height: fit-content;
+    width: 100%;
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.btn-03:hover {
+    background-color: transparent;
+    color: var(--color-text-black);
+    border: 1px solid var(--color-bg-black);
 }
 
 .container {

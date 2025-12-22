@@ -47,11 +47,374 @@
     "mainCategory": "beverages",
     "subCategory": "iced-tea",
 
+    "name": "Milk Iced Tea Sample",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.Creamy and refreshing iced tea blended for smooth indulgence.Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "assets/images/instagram/post01.jpg",
+      "assets/images/instagram/post02.jpg",
+      "assets/images/instagram/post03.jpg",
+      "assets/images/instagram/post04.jpg"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
     "name": "Milk Iced Tea",
     "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
     "tags": ["Creamy", "Refreshing", "Smooth"],
     "packInfo": "200ml Bottle",
-    "thumbnailImage": "/assets/images/products/beverages/milk-iced-tea-thumb.png",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
+
+    "brand": "SAMLEY CEYLON",
+    "itemForm": "Ready-to-Drink",
+    "flavor": "Milk Tea",
+    "teaVariety": "Iced Tea",
+    "unitCount": "200ml",
+
+    "price": 3.99,
+    "currency": "USD",
+    "stock": 48,
+    "rating": 4.7,
+    "reviewCount": 62,
+
+    "seoTitle": "SAMLEY CEYLON Milk Iced Tea – Refreshing Creamy Ready to Drink Tea Beverage 200ml",
+    "seoDescription": "A smooth and creamy milk iced tea crafted for refreshing moments anytime.",
+
+    "longDescription": "Our Milk Iced Tea blends premium brewed tea with creamy milk for a smooth, refreshing drink. Perfectly chilled and ready to enjoy, it’s crafted for warm days and relaxed moments.",
+
+    "features": [
+      "Ready-to-drink convenience",
+      "Smooth creamy texture",
+      "Perfectly chilled refreshment",
+      "Crafted from quality tea extracts"
+    ],
+
+    "galleryImages": [
+      "/assets/images/products/beverages/milk-iced-tea-1.png"
+    ]
+  },
+  {
+    "id": "milk-iced-tea",
+    "slug": "milk-iced-tea",
+    "mainCategory": "beverages",
+    "subCategory": "iced-tea",
+
+    "name": "Milk Iced Tea",
+    "shortDescription": "Creamy and refreshing iced tea blended for smooth indulgence.",
+    "tags": ["Creamy", "Refreshing", "Smooth"],
+    "packInfo": "200ml Bottle",
+    "thumbnailImage": "assets/images/instagram/post01.jpg",
 
     "brand": "SAMLEY CEYLON",
     "itemForm": "Ready-to-Drink",

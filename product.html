@@ -29,84 +29,92 @@
     <header id="navbar"></header>
 
     <!-- MAIN -->
-    <main class="container" style="height: 50vh;">
+    <main class="products-container-main ">
+        <div class="products-container">
 
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb" aria-label="Breadcrumb" style="padding-top: 150px;">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li id="breadcrumb-category"></li>
-                <li id="breadcrumb-product"></li>
-            </ul>
-        </nav>
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <ul class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
 
-        <!-- Product Section -->
-        <section class="product-detail">
+                    <li>
+                        <a href="products.html">Our Products</a>
+                    </li>
 
-            <!-- Gallery -->
-            <div class="product-gallery">
-                <img src="" alt="" id="product-main-image">
+                    <li id="breadcrumb-main-category"></li>
 
-                <div class="product-thumbnails">
-                    <!-- thumbnails injected here -->
-                </div>
-            </div>
+                    <li id="breadcrumb-sub-category"></li>
 
-            <!-- Info -->
-            <div class="product-info">
-
-                <!-- Tags -->
-                <ul class="product-tags" id="product-tags"></ul>
-
-                <!-- Title -->
-                <h1 class="h2" id="category-title">Products</h1>
-
-
-                <!-- Rating -->
-                <div class="product-rating">
-                    <span id="product-stars"></span>
-                    <span id="product-review-count"></span>
-                </div>
-
-                <!-- Pack Info -->
-                <p class="product-pack p-s" id="product-pack"></p>
-
-                <!-- Short Description -->
-                <p class="product-short-description p-m" id="product-short-description"></p>
-
-                <!-- Price -->
-                <p class="product-price" id="product-price"></p>
-
-                <!-- Meta Info -->
-                <ul class="product-meta">
-                    <li><strong>Brand:</strong> <span id="product-brand"></span></li>
-                    <li><strong>Item Form:</strong> <span id="product-item-form"></span></li>
-                    <li><strong>Tea Variety:</strong> <span id="product-variety"></span></li>
-                    <li><strong>Unit Count:</strong> <span id="product-unit-count"></span></li>
+                    <li id="breadcrumb-product"></li>
                 </ul>
+            </nav>
 
-            </div>
+            <!-- Product Section -->
+            <section class="product-detail">
+
+                <!-- Gallery -->
+                <div class="product-gallery">
+                    <img src="" alt="" id="product-main-image">
+
+                    <div class="product-thumbnails">
+                        <!-- thumbnails injected here -->
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="product-info">
+
+                    <!-- Tags 
+                <ul class="product-tags" id="product-tags"></ul>-->
+
+                    <!-- Title -->
+                    <h5 class="h5" id="product-title">Products</h5>
+
+                    <!-- Short Description 
+                <p class="product-short-description p-m" id="product-short-description"></p>-->
+                    <!-- Long Description -->
+                    <div class="product-description p-s">
+                        <p id="product-long-description"></p>
+                    </div>
+
+                    <!-- Pack Info -->
+                    <p class="product-pack p-s" id="product-pack"></p>
+
+                    <!-- Rating -->
+                    <div class="product-rating p-s">
+                        <span id="product-stars"></span>
+                        <span id="product-review-count"></span>
+                    </div>
+
+                    <div class=" amazon-btn">
+                        <button class="btn-03">Shop On Amazon</button>
+                    </div>
+                    <p class="product-stock">IN STOCK</p>
+
+                    <!-- Price 
+                    <p class="product-price" id="product-price"></p>-->
+
+                    <!-- Meta Info -->
+                    <ul class="product-meta ">
+                        <li><span class="product-meta-b">Brand:</span> <span id="product-brand"></span></li>
+                        <li><span class="product-meta-b">Item Form:</span> <span id="product-item-form"></span></li>
+                        <li><span class="product-meta-b">Tea Variety:</span> <span id="product-variety"></span></li>
+                        <li><span class="product-meta-b">Unit Count:</span> <span id="product-unit-count"></span></li>
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Features 
+            <div class="product-features-section">
+                <h3>Features</h3>
+                <ul id="product-features"></ul>-->
+        </div>
 
         </section>
+        </div>
 
-        <!-- Description -->
-        <section class="product-description">
-            <h3 class="h4">Description</h3>
-            <p id="product-long-description"></p>
-        </section>
-
-        <!-- Features -->
-        <section class="product-features">
-            <h3 class="h4">Key Features</h3>
-            <ul id="product-features"></ul>
-        </section>
-
-        <!-- Related Products (later) -->
-        <section class="related-products">
-            <h3 class="h4">You may also like</h3>
-            <div class="products-grid"></div>
-        </section>
 
     </main>
 
@@ -123,7 +131,8 @@
     <!-------------------------- Script --------------------------->
     <!------------------------------------------------------------->
     <script src="./assets/js/include.js"></script>
-    <script src="/assets/js/product.js"></script>
+    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/products.js"></script>
 
 </body>
 

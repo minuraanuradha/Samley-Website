@@ -3,6 +3,7 @@
     "id": "teas",
     "slug": "teas",
     "title": "Teas",
+    "description":" Discover our refreshing green tea collection, crafted from hand-picked leaves. Pure, vibrant flavor designed to bring calm to every cup.",
     "subCategories": [
       { "id": "green-tea", "slug": "green-tea", "title": "Green Tea" },
       { "id": "black-tea", "slug": "black-tea", "title": "Black Tea" },
@@ -25,9 +26,10 @@
     "id": "beverages",
     "slug": "beverages",
     "title": "Beverages",
+    "description":" Discover our refreshing green tea collection, crafted from hand-picked leaves. Pure, vibrant flavor designed to bring calm to every cup.",
     "subCategories": [
       { "id": "iced-coffee", "slug": "iced-coffee", "title": "Iced Coffee" },
-      { "id": "iced-tea", "slug": "iced-tea", "title": "Iced Tea" }
+      { "id": "iced-tea", "slug": "iced-tea", "title": "Iced Tea", "pagetitle": "Discover Iced Tea Collection", "description":" Discover our refreshing green tea collection, crafted from hand-picked leaves. Pure, vibrant flavor designed to bring calm to every cup." }
     ]
   },
   {
@@ -46,6 +48,7 @@
     "id": "coconut-based",
     "slug": "coconut-based",
     "title": "Coconut Based",
+    "description":" Discover our refreshing green tea collection, crafted from hand-picked leaves. Pure, vibrant flavor designed to bring calm to every cup.",
     "subCategories": [
       {
         "id": "coconut-water",

@@ -17,6 +17,8 @@ async function loadProducts() {
     }
 
     updateCategoryTitle(categorySlug);
+    updateBreadcrumbForProducts(categorySlug);
+    document.title = `${categorySlug.replace("-", " ")} | Samley Teas`;
 
     const res = await fetch("data/products.json");
     const products = await res.json();
@@ -43,10 +45,31 @@ async function updateCategoryTitle(categorySlug) {
     categories.forEach(main => {
         main.subCategories.forEach(sub => {
             if (sub.slug === categorySlug) {
-                document.getElementById("category-title").textContent = sub.title;
+
+                // Page title & description
+                document.getElementById("category-title").textContent = sub.pagetitle;
+                document.getElementById("category-description").textContent = sub.description;
             }
         });
     });
+}
+
+function updateBreadcrumbForProducts(categorySlug) {
+    fetch("data/categories.json")
+        .then(res => res.json())
+        .then(categories => {
+            categories.forEach(main => {
+                main.subCategories.forEach(sub => {
+                    if (sub.slug === categorySlug) {
+                        document.getElementById("breadcrumb-main-category").innerHTML =
+                            `<a href="products.html">${main.title}</a>`;
+
+                        document.getElementById("breadcrumb-sub-category").textContent =
+                            sub.title;
+                    }
+                });
+            });
+        });
 }
 
 
@@ -61,13 +84,32 @@ function renderProducts(products) {
         card.className = "product-card";
 
         card.innerHTML = `
-      <a href="product.html?product=${product.slug}">
-        <img src="${product.thumbnailImage}" alt="${product.name}">
-      </a>
-      <h5>${product.name}</h5>
-      <p>${product.shortDescription}</p>
-      <p>${product.packInfo}</p>
-    `;
+            <a href="product.html?product=${product.slug}" class="product-image"
+            style="background-image:url('${product.thumbnailImage}')">
+
+                <img src="${product.thumbnailImage}" alt="${product.name}" loading="lazy" />
+
+            </a>
+
+            <div class="content">
+                <div class="top">
+                    <h5>${product.name}</h5>
+                    <p>${product.shortDescription}</p>
+                </div>
+
+                <div class="bottom">
+                    <p class="tags">${product.tags}</p>
+                    <p>${product.packInfo}</p>
+                </div>
+            </div>
+
+            <div class="product-btn-div">
+                <a class="btn-03 product-btn" href="product.html?product=${product.slug}">
+                    View Product
+                </a>
+            </div>
+        `;
+
 
         grid.appendChild(card);
     });
