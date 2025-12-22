@@ -1,3 +1,6 @@
+/*-------STORY OF SAMLEY----------*/
+/*--------------------------------*/
+
 .story-of-samley-index {
     padding: 30px 24px;
     width: 100%;
@@ -97,4 +100,77 @@
 .story-of-samley-index p {
     width: 100%;
     max-width: 900px;
+}
+
+/*----------LOGO CAROSAL----------*/
+/*--------------------------------*/
+.logo-carosal {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: #f4fbfb;
+    justify-items: center;
+    align-items: center;
+}
+.logo-carosal .carsol {
+    max-width: 1000px;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+}
+.logo-carosal .img {
+    height: 100%;
+}
+
+/* =========================
+   Small devices (≥576px)
+   ========================= */
+@media (min-width: 576px) {
+    .logo-carosal {
+        padding: 30px 24px;
+    }
+    .logo-carosal .carsol {
+    max-width: 1000px;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+/* =========================
+   Medium devices / Tablets (≥768px)
+   ========================= */
+@media (min-width: 768px) {
+    .logo-carosal {
+        padding: 30px 36px;
+    }
+}
+
+/* =========================
+   Large devices / Laptops (≥992px)
+   ========================= */
+@media (min-width: 992px) {
+    .logo-carosal {
+        padding: 30px 80px;
+    }
+}
+
+/* =========================
+   Extra large devices / Desktops (≥1200px)
+   ========================= */
+@media (min-width: 1200px) {
+    .logo-carosal {
+        padding: 30px 80px;
+    }
+}
+
+/* =========================
+   2XL screens (≥1400px)
+   ========================= */
+@media (min-width: 1400px) {
+    .logo-carosal {
+        padding: 30px 100px;
+    }
 }
