@@ -136,6 +136,7 @@
     height: 110px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 }
 
@@ -173,4 +174,112 @@
     .logo-carosal {
         padding: 30px 100px;
     }
+}
+
+/*----------CATEGORY CAROSAL----------*/
+/*--------------------------------*/
+.category-section {
+    width: max-content;
+    height: 450px !important;
+    width: 100%;
+    overflow: scroll;
+}
+.category-section .category-track {
+    width: max-content;
+    height: 450px;
+    gap: 15px;
+    overflow: scroll;
+    display: inline-flex;
+}
+.category-section .category-track .category-card{
+    width:80dvw ;
+    height: 450px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 15px;
+    font-size: var(--fs-p-m);
+    color: var(--color-text-white);
+    background-size: cover;
+    background-position: center;
+}
+#category-card-01{
+    background-image: url(../images/instagram/post01.jpg);
+}
+#category-card-02{
+    background-image: url(../images/instagram/post02.jpg);
+}
+#category-card-03{
+    background-image: url(../images/instagram/post03.jpg);
+}
+#category-card-04{
+    background-image: url(../images/instagram/post04.jpg);
+}
+
+/* =========================
+   Medium devices / Tablets (≥768px)
+   ========================= */
+@media (min-width: 500px) {
+.category-section {
+    height: max-content;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.category-section .category-track {
+    width:100%;
+    height: max-content;
+    gap: 15px;
+    display: flex;
+    overflow: hidden;
+    max-width: 1440px;
+}
+    .category-section div .category-card{
+    width: 25%;
+    height: 300px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 10px;
+    font-size: var(--fs-p-m);
+    color: var(--color-text-white);
+    background-size: cover;
+    background-position: center;
+}
+}
+
+/* =========================
+   Large devices / Laptops (≥992px)
+   ========================= */
+@media (min-width: 992px) {
+    .category-section {
+    height: 400px;
+}
+    .category-section div .category-card{
+        width: 25%;
+    height: 400px;
+}
+
+}
+
+/* =========================
+   Extra large devices / Desktops (≥1200px)
+   ========================= */
+@media (min-width: 1200px) {
+    .category-section {
+    height: 450px;
+}
+    .category-section div .category-card{
+    height: 450px;
+}
+}
+
+/* =========================
+   2XL screens (≥1400px)
+   ========================= */
+@media (min-width: 1400px) {
+
 }
