@@ -1,0 +1,100 @@
+.story-of-samley-index {
+    padding: 30px 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.story-of-samley-index .head {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.story-of-samley-index p {
+    width: 100%;
+    padding: 0;
+}
+
+.story-of-samley-index .large-para {
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    font-weight: 800;
+}
+
+.story-of-samley-index .large-para span {
+    color: rgb(201, 201, 201);
+}
+
+.story-of-samley-index button {
+    display: none;
+    margin-top: 30px;
+}
+
+/* =========================
+   Small devices (≥576px)
+   ========================= */
+@media (min-width: 576px) {
+    .story-of-samley-index {
+        padding: 30px 24px;
+    }
+
+    .story-of-samley-index button {
+        display: block;
+        margin-top: 30px;
+    }
+}
+
+/* =========================
+   Medium devices / Tablets (≥768px)
+   ========================= */
+@media (min-width: 768px) {
+    .story-of-samley-index {
+        padding: 32px 36px;
+    }
+
+}
+
+/* =========================
+   Large devices / Laptops (≥992px)
+   ========================= */
+@media (min-width: 992px) {
+    .story-of-samley-index {
+        padding: 60px 80px;
+    }
+
+    .story-of-samley-index .large-para {
+        font-size: 30px;
+        color: var(--color-text-secondary);
+        font-weight: 800;
+    }
+
+    .story-of-samley-index button {
+        margin-top: 30px;
+    }
+}
+
+/* =========================
+   Extra large devices / Desktops (≥1200px)
+   ========================= */
+@media (min-width: 1200px) {
+    .story-of-samley-index {
+        padding: 60px 80px;
+    }
+}
+
+/* =========================
+   2XL screens (≥1400px)
+   ========================= */
+@media (min-width: 1400px) {
+    .story-of-samley-index {
+        padding: 80px 100px;
+    }
+}
+
+.story-of-samley-index p {
+    width: 100%;
+    max-width: 900px;
+}
